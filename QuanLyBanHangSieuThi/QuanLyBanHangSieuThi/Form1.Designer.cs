@@ -62,11 +62,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(94, 32);
+            this.label1.Location = new System.Drawing.Point(68, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 13);
+            this.label1.Size = new System.Drawing.Size(125, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Good night all";
+            this.label1.Text = "Quản lý dự án phần mềm";
             // 
             // Form1
             // 
