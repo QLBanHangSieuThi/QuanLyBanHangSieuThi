@@ -40,6 +40,9 @@ namespace QuanLyBanHangSieuThi
         private DevComponents.DotNetBar.ButtonItem buttonItem1;
         private DevComponents.DotNetBar.QatCustomizeItem qatCustomizeItem1;
         private DevComponents.DotNetBar.StyleManager styleManager1;
+        private DevComponents.DotNetBar.SuperTabControl superTabControl1;
+        private DevComponents.DotNetBar.SuperTabControlPanel superTabControlPanel1;
+        private DevComponents.DotNetBar.SuperTabItem superTabItem1;
         private IContainer components;
     
         public Form1()
@@ -51,15 +54,12 @@ namespace QuanLyBanHangSieuThi
         {
             this.components = new System.ComponentModel.Container();
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
-            this.ribbonTabItem1 = new DevComponents.DotNetBar.RibbonTabItem();
             this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
-            this.ribbonTabItem2 = new DevComponents.DotNetBar.RibbonTabItem();
-            this.ribbonPanel2 = new DevComponents.DotNetBar.RibbonPanel();
-            this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
-            this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
             this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
+            this.ribbonPanel2 = new DevComponents.DotNetBar.RibbonPanel();
+            this.ribbonTabItem1 = new DevComponents.DotNetBar.RibbonTabItem();
+            this.ribbonTabItem2 = new DevComponents.DotNetBar.RibbonTabItem();
             this.office2007StartButton1 = new DevComponents.DotNetBar.Office2007StartButton();
-            this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
             this.itemContainer1 = new DevComponents.DotNetBar.ItemContainer();
             this.itemContainer2 = new DevComponents.DotNetBar.ItemContainer();
             this.itemContainer3 = new DevComponents.DotNetBar.ItemContainer();
@@ -78,8 +78,16 @@ namespace QuanLyBanHangSieuThi
             this.itemContainer4 = new DevComponents.DotNetBar.ItemContainer();
             this.buttonItem12 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem13 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
+            this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
+            this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
+            this.superTabControl1 = new DevComponents.DotNetBar.SuperTabControl();
+            this.superTabItem1 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
+            this.superTabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -125,13 +133,6 @@ namespace QuanLyBanHangSieuThi
             this.ribbonControl1.TabIndex = 0;
             this.ribbonControl1.Text = "ribbonControl1";
             // 
-            // ribbonTabItem1
-            // 
-            this.ribbonTabItem1.Checked = true;
-            this.ribbonTabItem1.Name = "ribbonTabItem1";
-            this.ribbonTabItem1.Panel = this.ribbonPanel1;
-            this.ribbonTabItem1.Text = "ribbonTabItem1";
-            // 
             // ribbonPanel1
             // 
             this.ribbonPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -157,45 +158,6 @@ namespace QuanLyBanHangSieuThi
             this.ribbonPanel1.StyleMouseOver.Class = "";
             this.ribbonPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel1.TabIndex = 1;
-            // 
-            // ribbonTabItem2
-            // 
-            this.ribbonTabItem2.Name = "ribbonTabItem2";
-            this.ribbonTabItem2.Panel = this.ribbonPanel2;
-            this.ribbonTabItem2.Text = "ribbonTabItem2";
-            // 
-            // ribbonPanel2
-            // 
-            this.ribbonPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.ribbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel2.Location = new System.Drawing.Point(0, 0);
-            this.ribbonPanel2.Name = "ribbonPanel2";
-            this.ribbonPanel2.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel2.Size = new System.Drawing.Size(75, 21);
-            // 
-            // 
-            // 
-            this.ribbonPanel2.Style.Class = "";
-            this.ribbonPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.ribbonPanel2.StyleMouseDown.Class = "";
-            this.ribbonPanel2.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.ribbonPanel2.StyleMouseOver.Class = "";
-            this.ribbonPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.ribbonPanel2.TabIndex = 2;
-            // 
-            // styleManager1
-            // 
-            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2007Blue;
-            // 
-            // qatCustomizeItem1
-            // 
-            this.qatCustomizeItem1.Name = "qatCustomizeItem1";
             // 
             // ribbonBar1
             // 
@@ -229,24 +191,57 @@ namespace QuanLyBanHangSieuThi
             this.ribbonBar1.TitleStyleMouseOver.Class = "";
             this.ribbonBar1.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
+            // ribbonPanel2
+            // 
+            this.ribbonPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.ribbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ribbonPanel2.Location = new System.Drawing.Point(0, 0);
+            this.ribbonPanel2.Name = "ribbonPanel2";
+            this.ribbonPanel2.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.ribbonPanel2.Size = new System.Drawing.Size(75, 21);
+            // 
+            // 
+            // 
+            this.ribbonPanel2.Style.Class = "";
+            this.ribbonPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonPanel2.StyleMouseDown.Class = "";
+            this.ribbonPanel2.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonPanel2.StyleMouseOver.Class = "";
+            this.ribbonPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.ribbonPanel2.TabIndex = 2;
+            // 
+            // ribbonTabItem1
+            // 
+            this.ribbonTabItem1.Checked = true;
+            this.ribbonTabItem1.Name = "ribbonTabItem1";
+            this.ribbonTabItem1.Panel = this.ribbonPanel1;
+            this.ribbonTabItem1.Text = "ribbonTabItem1";
+            // 
+            // ribbonTabItem2
+            // 
+            this.ribbonTabItem2.Name = "ribbonTabItem2";
+            this.ribbonTabItem2.Panel = this.ribbonPanel2;
+            this.ribbonTabItem2.Text = "ribbonTabItem2";
+            // 
             // office2007StartButton1
             // 
             this.office2007StartButton1.AutoExpandOnClick = true;
             this.office2007StartButton1.CanCustomize = false;
             this.office2007StartButton1.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.Image;
             this.office2007StartButton1.ImageFixedSize = new System.Drawing.Size(16, 16);
-            this.office2007StartButton1.ImagePaddingHorizontal = 0;
-            this.office2007StartButton1.ImagePaddingVertical = 0;
+            this.office2007StartButton1.ImagePaddingHorizontal = 2;
+            this.office2007StartButton1.ImagePaddingVertical = 2;
             this.office2007StartButton1.Name = "office2007StartButton1";
             this.office2007StartButton1.ShowSubItems = false;
             this.office2007StartButton1.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.itemContainer1});
             this.office2007StartButton1.Text = "&File";
-            // 
-            // buttonItem1
-            // 
-            this.buttonItem1.Name = "buttonItem1";
-            this.buttonItem1.Text = "buttonItem1";
             // 
             // itemContainer1
             // 
@@ -417,14 +412,76 @@ namespace QuanLyBanHangSieuThi
             this.buttonItem13.SubItemsExpandWidth = 24;
             this.buttonItem13.Text = "E&xit";
             // 
+            // buttonItem1
+            // 
+            this.buttonItem1.Name = "buttonItem1";
+            this.buttonItem1.Text = "buttonItem1";
+            // 
+            // qatCustomizeItem1
+            // 
+            this.qatCustomizeItem1.Name = "qatCustomizeItem1";
+            // 
+            // styleManager1
+            // 
+            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2007Blue;
+            // 
+            // superTabControl1
+            // 
+            // 
+            // 
+            // 
+            // 
+            // 
+            // 
+            this.superTabControl1.ControlBox.CloseBox.Name = "";
+            // 
+            // 
+            // 
+            this.superTabControl1.ControlBox.MenuBox.Name = "";
+            this.superTabControl1.ControlBox.Name = "";
+            this.superTabControl1.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.superTabControl1.ControlBox.MenuBox,
+            this.superTabControl1.ControlBox.CloseBox});
+            this.superTabControl1.Controls.Add(this.superTabControlPanel1);
+            this.superTabControl1.Location = new System.Drawing.Point(5, 156);
+            this.superTabControl1.Name = "superTabControl1";
+            this.superTabControl1.ReorderTabsEnabled = true;
+            this.superTabControl1.SelectedTabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.superTabControl1.SelectedTabIndex = 0;
+            this.superTabControl1.Size = new System.Drawing.Size(200, 100);
+            this.superTabControl1.TabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.superTabControl1.TabIndex = 1;
+            this.superTabControl1.Tabs.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.superTabItem1});
+            this.superTabControl1.Text = "superTabControl1";
+            // 
+            // superTabItem1
+            // 
+            this.superTabItem1.AttachedControl = this.superTabControlPanel1;
+            this.superTabItem1.GlobalItem = false;
+            this.superTabItem1.Name = "superTabItem1";
+            this.superTabItem1.Text = "superTabItem1";
+            // 
+            // superTabControlPanel1
+            // 
+            this.superTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel1.Location = new System.Drawing.Point(0, 25);
+            this.superTabControlPanel1.Name = "superTabControlPanel1";
+            this.superTabControlPanel1.Size = new System.Drawing.Size(200, 75);
+            this.superTabControlPanel1.TabIndex = 1;
+            this.superTabControlPanel1.TabItem = this.superTabItem1;
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(594, 326);
+            this.Controls.Add(this.superTabControl1);
             this.Controls.Add(this.ribbonControl1);
             this.Name = "Form1";
             this.ribbonControl1.ResumeLayout(false);
             this.ribbonControl1.PerformLayout();
             this.ribbonPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).EndInit();
+            this.superTabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
