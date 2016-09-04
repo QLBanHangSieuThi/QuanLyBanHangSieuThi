@@ -32,6 +32,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CLRlib">
+      <HintPath>..\..\..\..\CLRlib.dll</HintPath>
+    </Reference>
+    <Reference Include="DPS Common">
+      <HintPath>..\..\..\..\DPS Common.dll</HintPath>
+    </Reference>
+    <Reference Include="DPS Connection Skin">
+      <HintPath>..\..\..\..\DPS Connection Skin.dll</HintPath>
+    </Reference>
+    <Reference Include="DPS MessageBox Skin">
+      <HintPath>..\..\..\..\DPS MessageBox Skin.dll</HintPath>
+    </Reference>
+    <Reference Include="DPS Registry">
+      <HintPath>..\..\..\..\DPS Registry.dll</HintPath>
+    </Reference>
+    <Reference Include="DPS Smart Control">
+      <HintPath>..\..\..\..\DPS Smart Control.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
