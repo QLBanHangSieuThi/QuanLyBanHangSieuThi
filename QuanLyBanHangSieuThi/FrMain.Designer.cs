@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
+            this.ribbonPanel2 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar5 = new DevComponents.DotNetBar.RibbonBar();
             this.buttonItem22 = new DevComponents.DotNetBar.ButtonItem();
@@ -47,7 +48,6 @@
             this.btnKhachHang = new DevComponents.DotNetBar.ButtonItem();
             this.btnLoaiKhachHang = new DevComponents.DotNetBar.ButtonItem();
             this.btnPTTT = new DevComponents.DotNetBar.ButtonItem();
-            this.ribbonPanel2 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonTabItem1 = new DevComponents.DotNetBar.RibbonTabItem();
             this.ribbonTabItem2 = new DevComponents.DotNetBar.RibbonTabItem();
             this.office2007StartButton1 = new DevComponents.DotNetBar.Office2007StartButton();
@@ -73,7 +73,16 @@
             this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
             this.tabItem1 = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabStrip2 = new DevComponents.DotNetBar.TabStrip();
+            this.ribbonBar6 = new DevComponents.DotNetBar.RibbonBar();
+            this.ribbonBar7 = new DevComponents.DotNetBar.RibbonBar();
+            this.btnLapDonDatHang = new DevComponents.DotNetBar.ButtonItem();
+            this.btnNhapHangNCC = new DevComponents.DotNetBar.ButtonItem();
+            this.btnNhapKhachTraLai = new DevComponents.DotNetBar.ButtonItem();
+            this.btnXuatBanBuon = new DevComponents.DotNetBar.ButtonItem();
+            this.btnXuatBanLe = new DevComponents.DotNetBar.ButtonItem();
+            this.btnXuatTraNCC = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonControl1.SuspendLayout();
+            this.ribbonPanel2.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,6 +127,30 @@
             this.ribbonControl1.TabGroupHeight = 14;
             this.ribbonControl1.TabIndex = 0;
             this.ribbonControl1.Text = "ribbonControl1";
+            // 
+            // ribbonPanel2
+            // 
+            this.ribbonPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.ribbonPanel2.Controls.Add(this.ribbonBar7);
+            this.ribbonPanel2.Controls.Add(this.ribbonBar6);
+            this.ribbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ribbonPanel2.Location = new System.Drawing.Point(0, 56);
+            this.ribbonPanel2.Name = "ribbonPanel2";
+            this.ribbonPanel2.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.ribbonPanel2.Size = new System.Drawing.Size(862, 96);
+            // 
+            // 
+            // 
+            this.ribbonPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonPanel2.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.ribbonPanel2.TabIndex = 2;
             // 
             // ribbonPanel1
             // 
@@ -377,28 +410,6 @@
             this.btnPTTT.SubItemsExpandWidth = 14;
             this.btnPTTT.Text = "PT Thanh Toán";
             this.btnPTTT.Click += new System.EventHandler(this.btnPTTT_Click);
-            // 
-            // ribbonPanel2
-            // 
-            this.ribbonPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.ribbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel2.Location = new System.Drawing.Point(0, 56);
-            this.ribbonPanel2.Name = "ribbonPanel2";
-            this.ribbonPanel2.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel2.Size = new System.Drawing.Size(862, 96);
-            // 
-            // 
-            // 
-            this.ribbonPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.ribbonPanel2.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.ribbonPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.ribbonPanel2.TabIndex = 2;
             // 
             // ribbonTabItem1
             // 
@@ -663,6 +674,106 @@
             this.tabStrip2.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.MultilineWithNavigationBox;
             this.tabStrip2.Text = "tabStrip2";
             // 
+            // ribbonBar6
+            // 
+            this.ribbonBar6.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.ribbonBar6.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonBar6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.ribbonBar6.ContainerControlProcessDialogKey = true;
+            this.ribbonBar6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ribbonBar6.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btnLapDonDatHang,
+            this.btnNhapHangNCC,
+            this.btnNhapKhachTraLai});
+            this.ribbonBar6.Location = new System.Drawing.Point(3, 0);
+            this.ribbonBar6.Name = "ribbonBar6";
+            this.ribbonBar6.Size = new System.Drawing.Size(277, 93);
+            this.ribbonBar6.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.ribbonBar6.TabIndex = 0;
+            this.ribbonBar6.Text = "Quản lý nhập hàng";
+            // 
+            // 
+            // 
+            this.ribbonBar6.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonBar6.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // ribbonBar7
+            // 
+            this.ribbonBar7.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.ribbonBar7.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonBar7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.ribbonBar7.ContainerControlProcessDialogKey = true;
+            this.ribbonBar7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ribbonBar7.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btnXuatBanBuon,
+            this.btnXuatBanLe,
+            this.btnXuatTraNCC});
+            this.ribbonBar7.Location = new System.Drawing.Point(280, 0);
+            this.ribbonBar7.Name = "ribbonBar7";
+            this.ribbonBar7.Size = new System.Drawing.Size(251, 93);
+            this.ribbonBar7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.ribbonBar7.TabIndex = 1;
+            this.ribbonBar7.Text = "Quản lý xuất hàng";
+            // 
+            // 
+            // 
+            this.ribbonBar7.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonBar7.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // btnLapDonDatHang
+            // 
+            this.btnLapDonDatHang.Name = "btnLapDonDatHang";
+            this.btnLapDonDatHang.SubItemsExpandWidth = 14;
+            this.btnLapDonDatHang.Text = "Lập đơn đặt hàng";
+            // 
+            // btnNhapHangNCC
+            // 
+            this.btnNhapHangNCC.Name = "btnNhapHangNCC";
+            this.btnNhapHangNCC.SubItemsExpandWidth = 14;
+            this.btnNhapHangNCC.Text = "Nhập từ NCC";
+            // 
+            // btnNhapKhachTraLai
+            // 
+            this.btnNhapKhachTraLai.Name = "btnNhapKhachTraLai";
+            this.btnNhapKhachTraLai.SubItemsExpandWidth = 14;
+            this.btnNhapKhachTraLai.Text = "Nhập khách trả lại";
+            // 
+            // btnXuatBanBuon
+            // 
+            this.btnXuatBanBuon.Name = "btnXuatBanBuon";
+            this.btnXuatBanBuon.SubItemsExpandWidth = 14;
+            this.btnXuatBanBuon.Text = "Xuất bán buôn";
+            // 
+            // btnXuatBanLe
+            // 
+            this.btnXuatBanLe.Name = "btnXuatBanLe";
+            this.btnXuatBanLe.SubItemsExpandWidth = 14;
+            this.btnXuatBanLe.Text = "Xuất bán lẻ";
+            // 
+            // btnXuatTraNCC
+            // 
+            this.btnXuatTraNCC.Name = "btnXuatTraNCC";
+            this.btnXuatTraNCC.SubItemsExpandWidth = 14;
+            this.btnXuatTraNCC.Text = "Xuất trả lại NCC";
+            // 
             // FrMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -674,6 +785,7 @@
             this.Text = "Quản Lý Siêu Thị";
             this.ribbonControl1.ResumeLayout(false);
             this.ribbonControl1.PerformLayout();
+            this.ribbonPanel2.ResumeLayout(false);
             this.ribbonPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -726,6 +838,14 @@
         private DevComponents.DotNetBar.TabItem tabItem1;
         private DevComponents.DotNetBar.TabStrip tabStrip2;
         private DevComponents.DotNetBar.ButtonItem btnPTTT;
+        private DevComponents.DotNetBar.RibbonBar ribbonBar7;
+        private DevComponents.DotNetBar.RibbonBar ribbonBar6;
+        private DevComponents.DotNetBar.ButtonItem btnLapDonDatHang;
+        private DevComponents.DotNetBar.ButtonItem btnNhapHangNCC;
+        private DevComponents.DotNetBar.ButtonItem btnNhapKhachTraLai;
+        private DevComponents.DotNetBar.ButtonItem btnXuatBanBuon;
+        private DevComponents.DotNetBar.ButtonItem btnXuatBanLe;
+        private DevComponents.DotNetBar.ButtonItem btnXuatTraNCC;
     }
 }
 
